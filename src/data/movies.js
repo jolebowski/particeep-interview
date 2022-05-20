@@ -37,7 +37,7 @@ const movies = [
     category: "Drame",
     likes: 16,
     dislikes: 2,
-    imageMovie: require("../Assets/Images/creed2.jpeg"),
+    imageMovie: require("../assets/Images/creed2.jpeg"),
   },
   {
     id: "6",
@@ -45,7 +45,7 @@ const movies = [
     category: "Thriller",
     likes: 11,
     dislikes: 3,
-    imageMovie: require("../Assets/Images/pulpFiction.jpeg"),
+    imageMovie: require("../assets/Images/pulpFiction.jpeg"),
   },
   {
     id: "7",
@@ -53,7 +53,7 @@ const movies = [
     category: "Thriller",
     likes: 12333,
     dislikes: 32,
-    imageMovie: require("../Assets/Images/pulpFiction.jpeg"),
+    imageMovie: require("../assets/Images/pulpFiction.jpeg"),
   },
   {
     id: "8",
@@ -61,7 +61,7 @@ const movies = [
     category: "Thriller",
     likes: 2,
     dislikes: 1,
-    imageMovie: require("../Assets/Images/seven.jpeg"),
+    imageMovie: require("../assets/Images/seven.jpeg"),
   },
   {
     id: "9",
@@ -69,7 +69,7 @@ const movies = [
     category: "Thriller",
     likes: 2,
     dislikes: 1,
-    imageMovie: require("../Assets/Images/inception.jpeg"),
+    imageMovie: require("../assets/Images/inception.jpeg"),
   },
   {
     id: "10",
@@ -77,7 +77,7 @@ const movies = [
     category: "Thriller",
     likes: 22,
     dislikes: 12,
-    imageMovie: require("../Assets/Images/goneGirl.jpeg"),
+    imageMovie: require("../assets/Images/goneGirl.jpeg"),
   },
 ];
 
