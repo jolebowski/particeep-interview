@@ -41,6 +41,9 @@ export const MovieCard = ({ movie }) => {
     }
   };
 
+  console.log(dislikeActive, "dislikeActive");
+  console.log(likeActive, "likeActive");
+
   return (
     <>
       <div className="col-md-4 col-sm-6 col-xs-12" key={movie.id}>
@@ -70,26 +73,30 @@ export const MovieCard = ({ movie }) => {
           </div>
         </div>
         <div className="card-body">
-          <i
-            className="bi bi-hand-thumbs-up-fill"
-            style={{
-              fontSize: "2rem",
-              color: "#49a078",
-              cursor: "pointer",
-              marginBottom: 10,
-            }}
-            onClick={() => likeButton()}
-          ></i>
-          <i
-            className="bi bi-hand-thumbs-down-fill"
-            style={{
-              fontSize: "2rem",
-              color: "#d72638",
-              cursor: "pointer",
-              marginBottom: 10,
-            }}
-            onClick={() => dislikeButton()}
-          ></i>
+          {!likeActive ? (
+            <i
+              className="bi bi-hand-thumbs-up-fill"
+              style={{
+                fontSize: "2rem",
+                color: "#49a078",
+                cursor: "pointer",
+                marginBottom: 10,
+              }}
+              onClick={() => likeButton()}
+            ></i>
+          ) : (
+            <i
+              className="bi bi-hand-thumbs-down-fill"
+              style={{
+                fontSize: "2rem",
+                color: "#d72638",
+                cursor: "pointer",
+                marginBottom: 10,
+              }}
+              onClick={() => dislikeButton()}
+            ></i>
+          )}
+
           <h2 className="card-title">{movie.title}</h2>
           <p className="card-text">{movie.category}</p>
 
