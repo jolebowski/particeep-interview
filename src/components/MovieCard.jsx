@@ -1,5 +1,8 @@
+import { useDispatch } from "react-redux";
+import { RemoveMovieAction } from "../redux/Actions";
 
-export const MovieCard = ({movie}) => {
+export const MovieCard = ({ movie }) => {
+  const dispatch = useDispatch();
   return (
     <>
       <div className="col-md-4 col-sm-6 col-xs-12" key={movie.id}>
@@ -29,7 +32,11 @@ export const MovieCard = ({movie}) => {
           <h2 className="card-title">{movie.title}</h2>
           <p className="card-text">{movie.category}</p>
 
-          <button type="button" className="btn btn-outline-danger btn-sm">
+          <button
+            type="button"
+            className="btn btn-outline-danger btn-sm"
+            onClick={() => dispatch(RemoveMovieAction(movie.id))}
+          >
             Supprimer le film
           </button>
         </div>

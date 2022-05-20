@@ -6,3 +6,10 @@ export const fetchMoviesAction = (movies) => {
     payload: movies,
   };
 };
+
+export const RemoveMovieAction = (id) => {
+  return {
+    type: actions.REMOVE_MOVIE,
+    payload: id,
+  };
+};
