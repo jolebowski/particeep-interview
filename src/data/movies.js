@@ -5,7 +5,7 @@ const movies = [
     category: "Comedy",
     likes: 4,
     dislikes: 1,
-    imageMovie: require("../Assets/Images/oceans8.jpeg"),
+    imageMovie: require("../assets/Images/oceans8.jpeg"),
   },
   {
     id: "2",
@@ -13,7 +13,7 @@ const movies = [
     category: "Comedy",
     likes: 2,
     dislikes: 0,
-    imageMovie: require("../Assets/Images/midnightSun.jpeg"),
+    imageMovie: require("../assets/Images/midnightSun.jpeg"),
   },
   {
     id: "3",
@@ -21,7 +21,7 @@ const movies = [
     category: "Animation",
     likes: 3,
     dislikes: 1,
-    imageMovie: require("../Assets/Images/indestructibles2.jpeg"),
+    imageMovie: require("../assets/Images/indestructibles2.jpeg"),
   },
   {
     id: "4",
@@ -29,7 +29,7 @@ const movies = [
     category: "Thriller",
     likes: 6,
     dislikes: 6,
-    imageMovie: require("../Assets/Images/sansUnBruit.jpeg"),
+    imageMovie: require("../assets/Images/sansUnBruit.jpeg"),
   },
   {
     id: "5",

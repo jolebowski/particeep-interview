@@ -1,11 +1,10 @@
-import React from "react";
 
-export const MovieCard = () => {
+export const MovieCard = ({movie}) => {
   return (
     <>
-      <div className="col-md-4 col-sm-6 col-xs-12">
+      <div className="col-md-4 col-sm-6 col-xs-12" key={movie.id}>
         <div className="card-header">
-          <img src="https://image.tmdb.org/t/p/original//6DrHO1jr3qVrViUO6s6kFiAGM7.jpg" />
+          <img src={movie.imageMovie} alt="test1" />
         </div>
         <div className="progress" style={{ height: "2px" }}>
           <div
@@ -27,11 +26,11 @@ export const MovieCard = () => {
               marginBottom: 10,
             }}
           ></i>
-          <h2 className="card-title">test1</h2>
-          <p className="card-text">test2.</p>
+          <h2 className="card-title">{movie.title}</h2>
+          <p className="card-text">{movie.category}</p>
 
           <button type="button" className="btn btn-outline-danger btn-sm">
-            Small button
+            Supprimer le film
           </button>
         </div>
       </div>
