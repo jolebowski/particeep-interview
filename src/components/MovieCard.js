@@ -18,10 +18,8 @@ export const MovieCard = () => {
           ></div>
         </div>
         <div className="card-body">
-          <h2 className="card-title">test1</h2>
-          <p className="card-text">test2.</p>
           <i
-            class="bi bi-hand-thumbs-up-fill"
+            className="bi bi-hand-thumbs-up-fill"
             style={{
               fontSize: "2rem",
               color: "green",
@@ -29,6 +27,9 @@ export const MovieCard = () => {
               marginBottom: 10,
             }}
           ></i>
+          <h2 className="card-title">test1</h2>
+          <p className="card-text">test2.</p>
+
           <button type="button" className="btn btn-outline-danger btn-sm">
             Small button
           </button>
