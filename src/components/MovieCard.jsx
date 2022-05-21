@@ -9,7 +9,6 @@ export const MovieCard = ({ movie }) => {
   const [likeActive, setLikeActive] = useState(false);
   const [dislikeActive, setDisLikeActive] = useState(false);
 
-  //console.log(like, "like");
   const dispatch = useDispatch();
   const likeButton = () => {
     if (likeActive) {
@@ -40,10 +39,6 @@ export const MovieCard = ({ movie }) => {
       }
     }
   };
-
-  console.log(dislikeActive, "dislikeActive");
-  console.log(likeActive, "likeActive");
-
   return (
     <>
       <div className="col-md-4 col-sm-6 col-xs-12" key={movie.id}>

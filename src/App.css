@@ -32,3 +32,11 @@ body{
   font-weight: bold;
   color: #fff;
 }
+.pagination {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 40px;
+  font-size: 17px;
+  border-radius: 3px;
+}

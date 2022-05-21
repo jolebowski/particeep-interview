@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMoviesAction } from "../redux/Actions";
-import { MovieCard } from "./MovieCard";
+import { Pagination } from "./Pagination";
 import { movies$ } from "../data/movies";
 
 export const Movies = () => {
@@ -24,13 +24,7 @@ export const Movies = () => {
       ) : (
         ""
       )}
-      <div className="row">
-        {movies.length !== 0 ? (
-          movies.map((movie) => <MovieCard movie={movie} />)
-        ) : (
-          <h4 className="mt-4 mb-4 text-center">Aucun film</h4>
-        )}
-      </div>
+      <Pagination data={movies} />
     </div>
   );
 };
